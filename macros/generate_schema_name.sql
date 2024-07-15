@@ -2,7 +2,7 @@
 
     {%- set default_schema = target.schema -%}
 
-    {%- if target.name[-3:] == 'dev' -%}
+    {%- if target.name[-2:] == 'CI' -%}
 
         {{ target.schema }}_{{ custom_schema_name | trim }}
 
