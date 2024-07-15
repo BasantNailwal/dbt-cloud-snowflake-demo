@@ -5,7 +5,6 @@ with source as (
 ),
 
 renamed as (
-
     select
     
         {{ dbt_utils.surrogate_key(
